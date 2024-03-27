@@ -3,117 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-body {
-    font-family: "Lato", sans-serif;
-    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/953/937/desktop-wallpaper-computer-science-%C2%B7%E2%91%A0-full-backgrounds-for-computer-engineer.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-.card {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-.card-content {
-    padding: 20px;
-}
-.card-content h2 {
-    margin-top: 0;
-}
-.skills {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.skills-bar {
-    flex: 1;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    overflow: hidden;
-}
-.skills-bar-inner {
-    height: 8px;
-    background-color: #4CAF50;
-}
-.skills-text {
-    margin-left: 10px;
-}
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.social-icons {
-    margin-top: 10px;
-}
-.social-icons a {
-    margin: 0 10px;
-    color: white;
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-.social-icons a:hover {
-    color: #4CAF50;
-}
+        body {
+            background-image: url('https://e1.pxfuel.com/desktop-wallpaper/953/937/desktop-wallpaper-computer-science-%C2%B7%E2%91%A0-full-backgrounds-for-computer-engineer.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <div class="container mx-auto px-4 py-5">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+    <div class="container py-5">
+        <div class="row">
             <div class="col-md-4">
-                <div class="card bg-transparent border-0 mb-4" style="background-color: rgba(255, 255, 255, 0.2); border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                    <img src="https://lh3.googleusercontent.com/a/ACg8ocKV6rVGDrZQPbEDTaeCfGOL9lg-BxRlMEoAA0W5BCTxmQ=s432-c-no" alt="Avatar" class="card-img-top" style="border-radius: 10px 10px 0 0;">
-                    <div class="card-body p-4">
-                        <h2>Christian Dumandan</h2>
-                        <p><i class="fa fa-home fa-fw text-teal"></i>Philippines, Catalunan Grande Davao City</p>
-                        <p><i class="fa fa-envelope fa-fw text-teal"></i>cegsdumandan@addu.edu.ph</p>
-                        <p><i class="fa fa-phone fa-fw text-teal"></i>09308825541</p>
+                <div class="card bg-transparent border-0 mb-4">
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocKV6rVGDrZQPbEDTaeCfGOL9lg-BxRlMEoAA0W5BCTxmQ=s432-c-no" alt="Avatar" class="card-img-top rounded-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Christian Dumandan</h2>
+                        <p><i class="fas fa-home fa-fw text-teal"></i> Philippines, Catalunan Grande Davao City</p>
+                        <p><i class="fas fa-envelope fa-fw text-teal"></i> cegsdumandan@addu.edu.ph</p>
+                        <p><i class="fas fa-phone fa-fw text-teal"></i> 09308825541</p>
                         <hr>
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="progress bg-light rounded-pill flex-grow-1" style="height: 8px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="ms-2">React</div>
-                        </div>                        
+                        <div class="progress bg-light rounded-pill mb-3" style="height: 8px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="progress bg-light rounded-pill flex-grow-1" style="height: 8px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="ms-2">ChatGpt</div>
-                        </div>    
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="progress bg-light rounded-pill flex-grow-1" style="height: 8px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="ms-2">Canva</div>
-                        </div>    
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="progress bg-light rounded-pill flex-grow-1" style="height: 8px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="ms-2">Flutter</div>
-                        </div>    
+                        <p>React</p>
+                        <!-- Add more skill progress bars as needed -->
                         <hr>
                         <h3>Languages</h3>
                         <p>English</p>
@@ -123,37 +41,22 @@ body {
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="card bg-light rounded-3 shadow">
-                    <div class="card-body p-4">
+                <div class="card">
+                    <div class="card-body">
                         <h2><i class="fas fa-suitcase fa-fw me-2 text-teal fs-3"></i>Experience</h2>
                         <div>
                             <h3>Flutter</h3>
                             <p>Know how to input and output from the database</p>
                         </div>
-                        <div>
-                            <h3>Full Stack Developer</h3>
-                            <p>Know at least to input, delete, edit data</p>
-                        </div>
-                        <div>
-                            <h3>Flask Developer</h3>
-                            <p>Make sense ang code pero dili gumana, i know at least to input, delete, and to edit data from the databse SQL</p>
-                        </div>
+                        <!-- Add more experience items as needed -->
                     </div>
                 </div>
-                <div class="card bg-light rounded-3 shadow">
-                    <div class="card-body p-4">
-                        <h2><i class="fa fa-certificate fa-fw text-teal"></i>Education</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h2><i class="fas fa-certificate fa-fw text-teal"></i>Education</h2>
                         <div>
                             <h3>Ateneo de Davao University</h3>
-                            <p>3rd year College pa</p>
-                        </div>
-                        <div>
-                            <h3>Ateneo de Davao Senior High School</h3>
-                            <p>Graduated from Senior High School / Good Moral</p>
-                        </div>
-                        <div>
-                            <h3>Holy Cross of Mintal</h3>
-                            <p>Good Moral</p>
+                            <p>3rd year College</p>
                         </div>
                     </div>
                 </div>
@@ -161,11 +64,15 @@ body {
         </div>
     </div>
     
-    <footer class="footer fixed-bottom bg-dark text-white py-3">
-        <div class="social-icons mt-3">
-            <a href="https://www.facebook.com/cegdumandan" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+    <footer class="fixed-bottom bg-dark text-white py-3">
+        <div class="container">
+            <div class="social-icons mt-3">
+                <a href="https://www.facebook.com/cegdumandan" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                <!-- Add more social media icons and links as needed -->
+            </div>
         </div>
     </footer>
     
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
 </html>
